@@ -1,2 +1,2 @@
-# VideoGallery
-People can upload and view videos here
+# resturant
+People can view and review every resturants
