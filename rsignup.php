@@ -56,7 +56,7 @@
 
 <body>
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <a class="navbar-brand"  href="index.html">Video Gallery</a>
+      <a class="navbar-brand"  href="index.php">Video Gallery</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>

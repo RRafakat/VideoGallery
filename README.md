@@ -1,2 +1,2 @@
-# VideoGallery
-People can watch and review every videos
+# resturant
+People can view and review every resturants

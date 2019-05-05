@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2019 at 12:31 PM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.3
+-- Generation Time: May 04, 2019 at 06:36 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -106,6 +106,30 @@ INSERT INTO `rsignup` (`id`, `firstname`, `lastname`, `username`, `email`, `pass
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `uploaded`
+--
+
+CREATE TABLE `uploaded` (
+  `id` int(11) NOT NULL,
+  `name` varchar(250) NOT NULL,
+  `url` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `uploaded`
+--
+
+INSERT INTO `uploaded` (`id`, `name`, `url`) VALUES
+(1, 'ff', 'http://127.0.0.1/video/Uploaded/videoplayback.webm'),
+(2, 'bb', 'http://127.0.0.1/video/Uploaded/videoplayback.webm'),
+(3, 'Funny Video', 'http://127.0.0.1/video/Uploaded/videoplayback.webm'),
+(4, 'new funny', 'http://127.0.0.1/video/Uploaded/videoplayback.webm'),
+(5, 'jdc test', 'http://127.0.0.1/video/Uploaded/videoplayback.webm'),
+(6, 'jdc test', 'http://127.0.0.1/video/Uploaded/videoplayback.webm');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `usignup`
 --
 
@@ -158,6 +182,12 @@ ALTER TABLE `rsignup`
   ADD UNIQUE KEY `username` (`username`);
 
 --
+-- Indexes for table `uploaded`
+--
+ALTER TABLE `uploaded`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `usignup`
 --
 ALTER TABLE `usignup`
@@ -172,7 +202,7 @@ ALTER TABLE `usignup`
 -- AUTO_INCREMENT for table `addres`
 --
 ALTER TABLE `addres`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `comments`
@@ -184,19 +214,25 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `rating`
 --
 ALTER TABLE `rating`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `rsignup`
 --
 ALTER TABLE `rsignup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `uploaded`
+--
+ALTER TABLE `uploaded`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `usignup`
 --
 ALTER TABLE `usignup`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
