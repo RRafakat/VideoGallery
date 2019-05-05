@@ -128,7 +128,7 @@ ini_set( "display_errors", 0);
           <div class="col-md-9" style="float: right">
             <form method="post">
               <div class="form-group">
-                  <input type="text" class="form-control" name="comments">
+                  <input type="textarea" class="form-control" name="comments">
                   <button type="submit" name="sub" class="btn btn-primary" style="margin: 10px 0px;">Send</button>
               </div>
             <?php
@@ -142,7 +142,7 @@ ini_set( "display_errors", 0);
                          $tql = mysqli_query($conn,$cql);
                          
                          if($tql){
-                              header('Refresh:0; comm.php');
+                              header('Refresh:0;');
                          }
                      }
                 ?>
